@@ -1,1 +1,7 @@
 <h1>155NEWS Project</h1>
+<link rel="manifest" href="./manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./pwabuilder-sw.js');
+  }
+</script>
