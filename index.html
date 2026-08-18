@@ -1,7 +1,66 @@
-<h1>155NEWS Project</h1>
-<link rel="manifest" href="./manifest.json">
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./pwabuilder-sw.js');
-  }
-</script>
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>155NEWS - تازہ ترین خبریں</title>
+    <link rel="manifest" href="./manifest.json">
+    <style>
+        body {
+            font-family: 'Jameel Noori Nastaleeq', Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 15px;
+            direction: rtl;
+        }
+        header {
+            background-color: #d32f2f;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .news-card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .news-card h2 {
+            font-size: 20px;
+            color: #333;
+            margin-top: 0;
+        }
+        .news-card p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>155NEWS - تازہ ترین خبریں</h1>
+    </header>
+
+    <!-- پہلی خبر -->
+    <div class="news-card">
+        <h2>یہاں اپنی پہلی خبر کا عنوان لکھیں</h2>
+        <p>یہاں پر خبر کی مکمل تفصیل یا خلاصہ درج کریں۔</p>
+    </div>
+
+    <!-- دوسری خبر -->
+    <div class="news-card">
+        <h2>یہاں اپنی دوسری خبر کا عنوان لکھیں</h2>
+        <p>یہاں دوسری خبر کی تفصیل درج کریں۔</p>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./pwabuilder-sw.js');
+        }
+    </script>
+</body>
+</html>
